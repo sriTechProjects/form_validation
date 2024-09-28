@@ -25,6 +25,13 @@
           <input type="email" id="email" name="email" class="block w-full border border-gray-300 p-2 rounded-md" required>
           <span id="emailError" class="text-red-600 text-sm hidden">Please enter a valid email address.</span>
         </div>
+        
+        <!-- Age Field -->
+        <div>
+          <label for="age" class="block text-sm font-medium text-gray-700">Age</label>
+          <input type="number" id="age" name="age" class="block w-full border border-gray-300 p-2 rounded-md" min="18" max="100" required>
+          <span id="ageError" class="text-red-600 text-sm hidden">Please enter a valid age between 18 and 100.</span>
+        </div>
 
         <!-- Password Field -->
         <div>
@@ -48,12 +55,6 @@
           </div>
         </div>
 
-        <!-- Age Field -->
-        <div>
-          <label for="age" class="block text-sm font-medium text-gray-700">Age</label>
-          <input type="number" id="age" name="age" class="block w-full border border-gray-300 p-2 rounded-md" min="18" max="100" required>
-          <span id="ageError" class="text-red-600 text-sm hidden">Please enter a valid age between 18 and 100.</span>
-        </div>
 
         <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md">Submit</button>
       </form>
